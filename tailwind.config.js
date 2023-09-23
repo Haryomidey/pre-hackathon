@@ -15,8 +15,7 @@ export default {
       'laptop': '1150px',
 
       'desktop': '1280px',
-    },
-    extend: {},
+    }
   },
   plugins: [],
 }

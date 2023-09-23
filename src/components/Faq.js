@@ -1,3 +1,4 @@
+// An Array for storing Frequently questions and answers (FAQs) content;
 
 const Faqs = [
     {
