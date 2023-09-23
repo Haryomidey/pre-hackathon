@@ -14,7 +14,6 @@ const FAQ = ({ StarPurple, StarBlur, Star, faqs }) => {
     // ==================   Function to toggle FAQS accordion    =================== //
     const toggleAccordion = (index) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-        console.log(index)
     };
 
 
@@ -44,7 +43,7 @@ const FAQ = ({ StarPurple, StarBlur, Star, faqs }) => {
                 {/* ================= Mapping through the FAQs array to display FAQS Container ================ */}
                 
                 {Faqs.map((faq, index) => (
-                    <div className={`w-full border-b border-[#D434FE] pb-2 cursor-pointer overflow-hidden ${activeIndex === index ? 'h-[120px] laptop:h-[130px]' : 'h-[30px] '} transition-h ease duration-300`} onClick={() => toggleAccordion(index)} key={faqs.id}>
+                    <div className={`w-full border-b border-[#D434FE] pb-2 cursor-pointer overflow-hidden ${activeIndex === index ? 'h-[150px] small:h-[130px]' : 'h-[30px] '} transition-min-h ease duration-300`} onClick={() => toggleAccordion(index)} key={faqs.id}>
                         <p className=' flex items-center justify-between text-[10px] mobile:text-[11px] laptop:text-sm'>{faq.question}<span className='color-pink text-lg'>{activeIndex === index ? "-" : "+"}</span></p>
                         <div className='mt-4 text-[#c9c9c9] text-[10px] mobile:text-[11px] laptop:text-sm'>
                             {faq.answer}
