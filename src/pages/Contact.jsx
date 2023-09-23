@@ -7,6 +7,9 @@ import X from '../assets/images/x.png';
 import Facebook from '../assets/images/facebook.png';
 import LinkedIn from '../assets/images/linkedin.png';
 
+ import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
 
       const [formInfos, setFormInfos] = useState({
@@ -15,9 +18,12 @@ const Contact = () => {
         first_name: '',
         message: '',
       });
-    
-    const [validated, setValidated] = useState(false);
-    const [errors, setErrors] = useState({});
+
+      
+      const [validated, setValidated] = useState('');
+      const [errors, setErrors] = useState({});
+      
+      const notify = () => toast(validated);
 
       const isValidEmail = (email) => {
 
@@ -86,17 +92,29 @@ const Contact = () => {
                 .then(result => console.log(result))
                 .catch(error => console.log('error', error));
             
-            setValidated(true);
-            console.log(formInfos);
+            setValidated('Message sent succesfully!');
+            toast.success(validated, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
         }
         else {
-            console.log(errors);
+            return;
         }
     }
 
   return (
     <div>
         <Navbar />
+        
+        <ToastContainer />
+        
         <div className="w-full px-5 laptop:px-[130px] pt-24 tablet:py-16 pb-10">
             <div className="w-full hero-height flex items-center flex-wrap justify-center laptop:justify-between">
                 <div className='w-full laptop:w-[45%] hidden laptop:block pl-[50px]'>

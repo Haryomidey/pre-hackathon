@@ -25,6 +25,8 @@ body{
   background: var(--dark);
   color: white;
   overflow-x: hidden;
+  -moz-overflow-x: hidden;
+  --webkit-overflow-x: hidden;
 }
 
 .menu_div{
