@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .text_primary{
+        @apply text-[#bdbcbc] text-sm leading-6;
+    }
+    .text_secondary{
+        @apply text-3xl font-bold mb-4;
+    }
+    .color-purple {
+        @apply text-[#903AFF];
+    }
+    .color-pink {
+        @apply text-[#D434FE];
+    }
+    .color-red {
+        @apply text-[#e223a7];
+    }
+    .color-dark {
+        @apply text-[#150E28];
+    }
+
+    .bg-purple {
+        @apply bg-[#903AFF];
+    }
+    .bg-pink {
+        @apply bg-[#D434FE];
+    }
+    .bg-red {
+        @apply bg-[#e223a7];
+    }
+    .bg-dark {
+        @apply bg-[#150E28];
+    }
+
+}
