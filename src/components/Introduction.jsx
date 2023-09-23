@@ -5,7 +5,7 @@ const Introduction = ({ StarPurple, CurvedArrow, overview }) => {
 
   return (
     <div className='flex items-center flex-wrap min-h-[60vh] mt-16 relative gap-20' ref={overview}>
-      <div className='w-full laptop:w-[45%] laptop:pl-20'>
+      <div className='w-full laptop:w-[45%] laptop:pl-20 overflow-x-hidden'>
 
         {/* ========== ========== */}
         <img src={StarPurple} className='absolute top-[40%] left-0' alt="" />

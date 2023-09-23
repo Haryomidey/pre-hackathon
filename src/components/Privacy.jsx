@@ -5,7 +5,7 @@ import CheckMark from '../assets/images/checkmark.png';
 
 const Privacy = ({PurpleLens, StarPurple, Star, StarBlur}) => {
   return (
-    <div className='flex flex-wrap items-center mt-20 laptop:mt-40 min-h-[100vh] pb-20 relative'>
+    <div className='flex flex-wrap items-center mt-20 laptop:mt-40 min-h-[100vh] pb-20 relative overflow-x-hidden'>
       {/* ===================== ABSOLUTE IMAGES ================== */}
       <img src={Star} className='w-[13px] absolute bottom-[25%] right-[40%]' alt="" />
       <img src={StarBlur} className='absolute top-[6%] left-[28%]' alt="" />

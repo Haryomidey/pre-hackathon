@@ -10,7 +10,7 @@ const Partners = ({PurpleLens, StarPurple, Star}) => {
         {/* ============================ Absolute images ========================= */}
         {/* ============================ Absolute images ========================= */}
         <div>
-            <div className='absolute w-[50%] top-[15%] z-[-1] left-[-20%]'>
+            <div className='absolute w-[50%] top-[15%] z-[-1] left-[-20%] overflow-x-hidden'>
                 <img src={PurpleLens} className='w-full h-full opacity-[.5]' alt="" />
             </div>
             
