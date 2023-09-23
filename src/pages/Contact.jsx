@@ -12,16 +12,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
-      const [formInfos, setFormInfos] = useState({
+    const [formInfos, setFormInfos] = useState({
         email: '',
         phone_number: '',
         first_name: '',
         message: '',
       });
 
-      const [errors, setErrors] = useState({});
+    const [errors, setErrors] = useState({});
 
-      const isValidEmail = (email) => {
+    // ========= ======== FORM VALIDATION ========= //
+  // ========= ======== FORM VALIDATION ========= //
+    function isValidEmail(email) {
 
         //=============== Regular Expression for Email validation ==============//
 
@@ -67,7 +69,6 @@ const Contact = () => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        // console.log(formInfos);
 
         if (validateForm()) {
             const baseUrl = 'https://backend.getlinked.ai';
@@ -83,7 +84,8 @@ const Contact = () => {
                 redirect: 'follow'
             };
 
-            fetch(`${baseUrl}/hackathon/contact-form`, requestOptions)
+            try {
+                fetch(`${baseUrl}/hackathon/contact-form`, requestOptions)
                 .then(response => response.text())
                 .then(result => console.log(result))
                 .catch(error => console.log('error', error));
@@ -98,9 +100,13 @@ const Contact = () => {
                 progress: undefined,
                 theme: "light",
             });
+            }
+            catch (err) {
+                console.log(err)
+            }
         }
         else {
-            return;
+            console.log(errors);
         }
     }
 
@@ -146,7 +152,7 @@ const Contact = () => {
                     {/* ======================= Form Container ======================= */}
                     {/* ======================= Form Container ======================= */}
                     
-                    <form method='POST' className='w-full flex flex-col mt-7' onClick={handleFormSubmit}>
+                    <form method='POST' className='w-full flex flex-col mt-7' onSubmit={handleFormSubmit}>
                         <input type="text" name='first_name' className='w-full bg-[#201930] outline-none px-4 py-2 rounded-[4px] border border-[#bbbbbb] placeholder:text-[#cecece]' placeholder='First Name' value={formInfos.first_name} onChange={(e) => setFormInfos({...formInfos, first_name: e.target.value})}/>
                         
                         {errors.first_name && <small className='text-red-600 mt-1'>{errors.first_name}</small>}

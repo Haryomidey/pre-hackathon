@@ -90,8 +90,6 @@ const Register = () => {
     e.preventDefault();
 
     // ======================== CHECKING IF FORM IS VALID ======================== //
-    // ======================== CHECKING IF FORM IS VALID ======================== //
-    // ======================== CHECKING IF FORM IS VALID ======================== //
     
     if (validateForm()) {
       const baseUrl = 'https://backend.getlinked.ai';
@@ -128,7 +126,6 @@ const Register = () => {
     else {
       console.log(errors);
     }
-    console.log(formInfos);
   }
 
   return (
@@ -160,16 +157,9 @@ const Register = () => {
           </div>
         </div>
 
-        {/******* ================================    =========================== *******/}
-        {/******* ================================    =========================== *******/}
-        {/******* ================================    =========================== *******/}
-
         <div className='w-[75%] laptop:w-[45%]'>
           <img src={Designer} className='w-full' alt="" />
         </div>
-
-        {/* ======================== ======================== */}
-        {/* ======================== ======================== */}
 
         <div className='w-full laptop:w-[48%] laptop:bg-[#1c152e] shadow-xl py-[30px] laptop:px-[55px] rounded-md'>
           <h1 className='color-pink '>Register</h1>
