@@ -3,7 +3,7 @@ import React from 'react'
 const Timeline = ({ StarPurple, Star, StarBlur, timeline }) => {
 
   return ( 
-    <div className='min-h-[100vh] mt-20 laptop:mt-40 pb-20 relative' ref={timeline}>
+    <div className='min-h-[100vh] mt-20 laptop:mt-40 pb-20 relative overflow-hidden' ref={timeline}>
       <h1 className='text-center text_secondary'>Timeline</h1>
       <p className='text_primary mx-auto text-center laptop:w-[34%] mt-2 pb-20 mobile:pb-10 laptop:pb-0'>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
       {/* ABSOLUTE IMAGES */}

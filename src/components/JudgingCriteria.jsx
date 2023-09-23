@@ -4,7 +4,7 @@ import Facing from '../assets/images/facing_each_other.png';
 const JudgingCriteria = ({PurpleLens, Star, StarPurple, StarBlur}) => {
   return (
     <div className='flex items-center flex-wrap gap-10 laptop:gap-7 mt-20 laptop:mt-0 min-h-[70vh] py-5 relative'>
-      <div className='w-full laptop:w-[45%] relative'>
+      <div className='w-full laptop:w-[45%] relative overflow-x-hidden'>
         {/* ABSOLUTES IMAGES */}
         <div className=''>
           <img src={StarPurple} className='absolute top-[-30%] left-[23%]' alt="" />

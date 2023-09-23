@@ -36,7 +36,7 @@ const HeroSection = ({PurpleLens, Star, StarBlur}) => {
 
 
   return (
-    <div className='w-full hero-height'>
+    <div className='w-full hero-height overflow-x-hidden'>
 
       <div className='flex flex-col gap-1'>
         <h1 className='text-sm mobile:text-xl mt-[-10px] laptop:mt-4 laptop:text-2xl italic font-semibold justify-center text-center laptop:text-right'>Igniting a Revolution in HR Innovation</h1>

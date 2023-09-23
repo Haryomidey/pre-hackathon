@@ -4,7 +4,7 @@ import Woman from '../assets/images/sitting_down.png';
 const RuleAndGuidline = ({ PurpleLens, Star, StarBlur }) => {
  
   return (
-    <div className='flex items-center flex-wrap-reverse gap-16 laptop:gap-0 mt-20 laptop:mt-0 w-full min-h-[60vh] relative'>
+    <div className='flex items-center flex-wrap-reverse gap-16 laptop:gap-0 mt-20 laptop:mt-0 w-full min-h-[60vh] relative overflow-x-hidden'>
 
       {/* ============= ABSOLUTE IMAGE ============== */}
       <div className='absolute w-[50%] top-0 flex items-baseline left-[3%] z-[-1]'>
