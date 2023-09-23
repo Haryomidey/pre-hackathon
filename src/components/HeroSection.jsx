@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // Importing images
 import Link from '../assets/images/link.png';
@@ -87,7 +88,7 @@ const HeroSection = ({PurpleLens, Star, StarBlur}) => {
 
           <p className='text-[#bdbcbc] mb-8 mt-1 text-center laptop:text-left text-[12px] laptop:text-sm laptop:w-[90%]'>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
           <div class="flex justify-center laptop:justify-start">
-            <button className='custom_btn'>Register</button>
+            <Link to='/register'><button className='custom_btn'>Register</button></Link>
           </div>
           <div className='flex items-center justify-center laptop:justify-start gap-[30px] mt-16 text-4xl laptop:text-5xl px-10 laptop:px-0'>
             <p>{String(hours).padStart(2, '0')}<span className='text-sm laptop:text-lg'>H</span></p>

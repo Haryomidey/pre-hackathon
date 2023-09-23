@@ -19,11 +19,7 @@ const Contact = () => {
         message: '',
       });
 
-      
-      const [validated, setValidated] = useState('');
       const [errors, setErrors] = useState({});
-      
-      const notify = () => toast(validated);
 
       const isValidEmail = (email) => {
 
@@ -91,9 +87,8 @@ const Contact = () => {
                 .then(response => response.text())
                 .then(result => console.log(result))
                 .catch(error => console.log('error', error));
-            
-            setValidated('Message sent succesfully!');
-            toast.success(validated, {
+
+            toast.success('Message sent succesfully!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
