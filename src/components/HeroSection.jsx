@@ -38,7 +38,7 @@ const HeroSection = ({PurpleLens, Star, StarBlur}) => {
     <div className='w-full hero-height'>
 
       <div className='flex flex-col gap-1'>
-        <h1 className='text-sm mobile:text-xl mt-[-10px] laptop:mt-4 laptop:text-2xl italic font-semibold justify-center laptop:text-right'>Igniting a Revolution in HR Innovation</h1>
+        <h1 className='text-sm mobile:text-xl mt-[-10px] laptop:mt-4 laptop:text-2xl italic font-semibold justify-center text-center laptop:text-right'>Igniting a Revolution in HR Innovation</h1>
 
         <div className='flex justify-center laptop:justify-end'>
           <img src={BentLine} alt="" />

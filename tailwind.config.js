@@ -12,7 +12,7 @@ export default {
 
       'tablet': '740px',
 
-      'laptop': '1024px',
+      'laptop': '1150px',
 
       'desktop': '1280px',
     },
