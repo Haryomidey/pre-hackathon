@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Importing image
 import Sponsors from '../assets/images/sponsors.png';
 
 const Partners = ({PurpleLens, StarPurple, Star}) => {
