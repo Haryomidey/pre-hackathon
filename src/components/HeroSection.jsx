@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 // Importing images
-import Link from '../assets/images/link.png';
+import LinkImage from '../assets/images/link.png';
 import Fire from '../assets/images/fire.png';
 import Creative from '../assets/images/creative.png';
 import Man from '../assets/images/man_wearing_glasses.png';
@@ -71,7 +71,7 @@ const HeroSection = ({PurpleLens, Star, StarBlur}) => {
             <div className='flex items-center gap-2 justify-center laptop:justify-start'>Hackathon
               <span className='color-pink'>1.0</span>
               <div className='w-[10%]'>
-                <img src={Link} className='w-full' alt="" />
+                <img src={LinkImage} className='w-full' alt="" />
               </div>
               <div className='w-[10%]'>
                 <img src={Fire} className='w-full' alt="" />
